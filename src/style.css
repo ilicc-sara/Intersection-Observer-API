@@ -19,6 +19,12 @@ body {
   overflow-x: hidden;
 }
 
+[data-src] {
+  min-width: 50px;
+  min-height: 50px;
+  /* border: 1px solid red; */
+}
+
 .site-logo {
   font-weight: 900;
   font-size: 0.8rem;
@@ -166,22 +172,22 @@ header {
 
 .from-left {
   grid-column: 2 / 3;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
 }
 
 .from-right {
   grid-column: 3 / 4;
-  transform: translateX(50%);
+  /* transform: translateX(50%); */
 }
 
 .from-left,
 .from-right {
   transition: opacity 250ms ease-in, transform 400ms ease-in;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .from-left.appear,
 .from-right.appear {
   transform: translateX(0);
-  opacity: 1;
+  /* opacity: 1; */
 }
